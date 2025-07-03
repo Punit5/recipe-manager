@@ -421,7 +421,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                       label: Text(tag),
                       onDeleted: () => setState(() => _tags.remove(tag)),
                     );
-                  }),
+                  }).toList(),
                 ),
               ],
             ),
