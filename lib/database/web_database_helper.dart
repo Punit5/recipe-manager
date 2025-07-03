@@ -7,7 +7,6 @@ class WebDatabaseHelper {
   static const String _idCounterKey = 'recipe_id_counter';
 
   Future<int> insertRecipe(Recipe recipe) async {
-    final prefs = await SharedPreferences.getInstance();
     final recipes = await getAllRecipes();
     
     int newId = await _getNextId();

@@ -305,7 +305,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                       ],
                     ),
                   );
-                }).toList(),
+                }),
                 ElevatedButton.icon(
                   icon: const Icon(Icons.add),
                   label: const Text('Add Ingredient'),
@@ -367,7 +367,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                       ],
                     ),
                   );
-                }).toList(),
+                }),
                 ElevatedButton.icon(
                   icon: const Icon(Icons.add),
                   label: const Text('Add Step'),
@@ -421,7 +421,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                       label: Text(tag),
                       onDeleted: () => setState(() => _tags.remove(tag)),
                     );
-                  }).toList(),
+                  }),
                 ),
               ],
             ),
